@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="TTM.001 — independent streetwear. Built Different. Made Original.">
+  <title>TTM.001 — Built Different. Made Original.</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="announcement">✦ TTM.001 IS NOW AVAILABLE — ANYONE, ANYWHERE ✦</div>
+  <header class="navbar">
+    <a class="logo" href="#home" aria-label="TTM.001 home">TTM<span>.001</span></a>
+    <nav id="navLinks" aria-label="Main navigation">
+      <a href="#shop">Shop</a><a href="#story">Our story</a><a href="#archive">Archive</a><a href="#contact">Contact</a>
+    </nav>
+    <button class="cart-button" id="openCart" aria-label="Open shopping cart">CART <span id="cartCount">0</span></button>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">INDEPENDENT STREETWEAR / SOUTH AFRICA</p>
+        <h1>BUILT<br>DIFFERENT<span>.</span></h1>
+        <p class="hero-line">MADE ORIGINAL.</p>
+        <p class="hero-description">For the ones becoming. Make your own lane.</p>
+        <a href="#shop" class="button button-yellow">SHOP THE COLLECTION ↗</a>
+      </div>
+      <div class="hero-stamp" aria-hidden="true">001</div>
+      <div class="hero-side-note">CREATE / EVOLVE / REPEAT</div>
+    </section>
+
+    <section class="intro" id="story">
+      <p class="eyebrow">001 / THE BEGINNING</p>
+      <h2>THIS IS NOT<br>THE FINAL VERSION.</h2>
+      <p>TTM.001 represents the journey of becoming. The first idea. The first move. The first chapter. You are allowed to evolve.</p>
+    </section>
+
+    <section class="shop section-pad" id="shop">
+      <div class="section-head">
+        <div><p class="eyebrow">002 / FIND YOUR VERSION</p><h2>THE COLLECTION<span>.</span></h2></div>
+        <p>Designed to stand apart.<br>Prices in South African rand.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filter products">
+        <button class="filter active" data-filter="all">ALL</button>
+        <button class="filter" data-filter="tees">TEES</button>
+        <button class="filter" data-filter="hoodies">HOODIES</button>
+        <button class="filter" data-filter="accessories">ACCESSORIES</button>
+      </div>
+      <div id="productGrid" class="products" aria-live="polite">
+        <p class="loading">Loading the collection…</p>
+      </div>
+    </section>
+
+    <section class="manifesto">
+      <p class="eyebrow">A DIFFERENT POINT OF VIEW</p>
+      <h2>YOU WERE NEVER<br>MADE TO <span>BLEND IN.</span></h2>
+      <p>CREATE YOUR OWN VERSION.</p>
+    </section>
+
+    <section class="archive section-pad" id="archive">
+      <div class="section-head">
+        <div><p class="eyebrow">003 / PAST RELEASES</p><h2>THE ARCHIVE<span>.</span></h2></div>
+        <p>Every drop has a story.<br>Explore previous chapters.</p>
+      </div>
+      <div id="archiveGrid" class="archive-grid"><p class="loading">Loading archive…</p></div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-top"><div class="footer-logo">TTM.001</div><p>BUILT DIFFERENT.<br>MADE ORIGINAL.</p></div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> TTM.001</span>
+      <div><a href="#shop">Shop</a><a href="#archive">Archive</a><a href="mailto:orders@ttm001.example">Contact</a></div>
+      <span>INDEPENDENT STREETWEAR</span>
+    </div>
+    <p class="legal-note">Before launch, replace the example contact email and publish your real delivery, returns, privacy and terms information.</p>
+  </footer>
+
+  <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="drawer-head"><h2>YOUR CART<span>.</span></h2><button id="closeCart" aria-label="Close cart">✕</button></div>
+    <div id="cartItems" class="cart-items"><p>Your cart is empty.</p></div>
+    <div class="cart-summary"><div><span>Subtotal</span><strong id="cartSubtotal">R0.00</strong></div><small>Delivery charges, if applicable, are confirmed before payment.</small>
+      <form id="checkoutForm">
+        <label for="customerEmail">Email for order updates</label>
+        <input id="customerEmail" type="email" autocomplete="email" required placeholder="you@example.com">
+        <button class="button button-yellow full-width" type="submit" id="checkoutButton">CONTINUE TO SECURE CHECKOUT ↗</button>
+        <p id="checkoutMessage" class="form-message" role="status"></p>
+      </form>
+    </div>
+  </aside>
+  <script src="/app.js" defer></script>
+</body>
+</html>
